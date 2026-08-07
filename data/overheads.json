@@ -1,0 +1,42 @@
+[
+  {
+    "overhead_mode": "TDCX_INCL_IT",
+    "shared_services": 1017,
+    "it_telecom": 233,
+    "facilities": 376,
+    "general_overheads": 107,
+    "total_overheads": 1733
+  },
+  {
+    "overhead_mode": "TDCX_EXCL_IT",
+    "shared_services": 1017,
+    "it_telecom": 0,
+    "facilities": 376,
+    "general_overheads": 107,
+    "total_overheads": 1500
+  },
+  {
+    "overhead_mode": "REMOTE",
+    "shared_services": 1017,
+    "it_telecom": 93,
+    "facilities": 0,
+    "general_overheads": 107,
+    "total_overheads": 1217
+  },
+  {
+    "overhead_mode": "CLIENT_SITE",
+    "shared_services": 1017,
+    "it_telecom": 0,
+    "facilities": 0,
+    "general_overheads": 107,
+    "total_overheads": 1124
+  },
+  {
+    "overhead_mode": "HYBRID",
+    "shared_services": 1017,
+    "it_telecom": 149,
+    "facilities": 150,
+    "general_overheads": 107,
+    "total_overheads": 1423
+  }
+]
