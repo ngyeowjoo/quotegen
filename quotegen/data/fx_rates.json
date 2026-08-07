@@ -1,0 +1,94 @@
+[
+  {
+    "currency": "CURRENCY",
+    "rate_per_usd": 1
+  },
+  {
+    "currency": "USD",
+    "rate_per_usd": 2
+  },
+  {
+    "currency": "CNY",
+    "rate_per_usd": 3
+  },
+  {
+    "currency": "EUR",
+    "rate_per_usd": 4
+  },
+  {
+    "currency": "AUD",
+    "rate_per_usd": 5
+  },
+  {
+    "currency": "HKD",
+    "rate_per_usd": 6
+  },
+  {
+    "currency": "IDR",
+    "rate_per_usd": 7
+  },
+  {
+    "currency": "JPY",
+    "rate_per_usd": 8
+  },
+  {
+    "currency": "MYR",
+    "rate_per_usd": 9
+  },
+  {
+    "currency": "PHP",
+    "rate_per_usd": 10
+  },
+  {
+    "currency": "SGD",
+    "rate_per_usd": 11
+  },
+  {
+    "currency": "THB",
+    "rate_per_usd": 12
+  },
+  {
+    "currency": "INR",
+    "rate_per_usd": 13
+  },
+  {
+    "currency": "COP",
+    "rate_per_usd": 14
+  },
+  {
+    "currency": "USD",
+    "rate_per_usd": 15
+  },
+  {
+    "currency": "KRW",
+    "rate_per_usd": 16
+  },
+  {
+    "currency": "RON",
+    "rate_per_usd": 17
+  },
+  {
+    "currency": "TWD",
+    "rate_per_usd": 18
+  },
+  {
+    "currency": "GBP",
+    "rate_per_usd": 19
+  },
+  {
+    "currency": "VND",
+    "rate_per_usd": 20
+  },
+  {
+    "currency": "TRY",
+    "rate_per_usd": 21
+  },
+  {
+    "currency": "BRL",
+    "rate_per_usd": 22
+  },
+  {
+    "currency": "EGP",
+    "rate_per_usd": 23
+  }
+]

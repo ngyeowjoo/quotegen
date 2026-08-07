@@ -1,0 +1,212 @@
+[
+  {
+    "country": "Singapore",
+    "biz_unit": "TDSG-SIN",
+    "currency": "SGD",
+    "vat_pct": 0.09,
+    "social_security_pct": 0.17
+  },
+  {
+    "country": "Malaysia",
+    "biz_unit": "TDMY-KUL",
+    "currency": "MYR",
+    "vat_pct": 0.08,
+    "social_security_pct": 0.13
+  },
+  {
+    "country": "Thailand",
+    "biz_unit": "TDTH-BKK",
+    "currency": "THB",
+    "vat_pct": 0.07,
+    "social_security_pct": 0.05
+  },
+  {
+    "country": "Philippines",
+    "biz_unit": "TDPH-MNL",
+    "currency": "PHP",
+    "vat_pct": 0.12,
+    "social_security_pct": 0.15000000000000002
+  },
+  {
+    "country": "Philippines",
+    "biz_unit": "TDPH-CEB",
+    "currency": "PHP",
+    "vat_pct": 0.12,
+    "social_security_pct": 0.15000000000000002
+  },
+  {
+    "country": "Philippines",
+    "biz_unit": "TDPH-ILO",
+    "currency": "PHP",
+    "vat_pct": 0.12,
+    "social_security_pct": 0.15000000000000002
+  },
+  {
+    "country": "Japan",
+    "biz_unit": "TDJP-YOK",
+    "currency": "JPY",
+    "vat_pct": 0.1,
+    "social_security_pct": 0.15869999999999998
+  },
+  {
+    "country": "China",
+    "biz_unit": "TDCN-PEK",
+    "currency": "CNY",
+    "vat_pct": 0.06,
+    "social_security_pct": 0.387
+  },
+  {
+    "country": "China",
+    "biz_unit": "TDCN-SHA",
+    "currency": "CNY",
+    "vat_pct": 0.06,
+    "social_security_pct": 0.3282
+  },
+  {
+    "country": "China",
+    "biz_unit": "TDCN-WUH",
+    "currency": "CNY",
+    "vat_pct": 0.06,
+    "social_security_pct": 0.3372
+  },
+  {
+    "country": "China",
+    "biz_unit": "TDCN-XIY",
+    "currency": "CNY",
+    "vat_pct": 0.06,
+    "social_security_pct": 0.3002
+  },
+  {
+    "country": "China",
+    "biz_unit": "TDCN-HGH",
+    "currency": "CNY",
+    "vat_pct": 0.06,
+    "social_security_pct": 0.382
+  },
+  {
+    "country": "China",
+    "biz_unit": "TDCN-FOU",
+    "currency": "CNY",
+    "vat_pct": 0.06,
+    "social_security_pct": 0.272
+  },
+  {
+    "country": "Spain",
+    "biz_unit": "TDES-BCN",
+    "currency": "EUR",
+    "vat_pct": 0.21,
+    "social_security_pct": 0.323
+  },
+  {
+    "country": "Turkiye",
+    "biz_unit": "TDTR-IST",
+    "currency": "TRY",
+    "vat_pct": 0.2,
+    "social_security_pct": 0.205
+  },
+  {
+    "country": "Romania",
+    "biz_unit": "TDRO-BUH",
+    "currency": "RON",
+    "vat_pct": 0.21,
+    "social_security_pct": 0.5731
+  },
+  {
+    "country": "Colombia",
+    "biz_unit": "TDCO-BOG",
+    "currency": "COP",
+    "vat_pct": 0.19,
+    "social_security_pct": 0.235
+  },
+  {
+    "country": "India",
+    "biz_unit": "TDIN-HYD",
+    "currency": "INR",
+    "vat_pct": 0.18,
+    "social_security_pct": 0.06
+  },
+  {
+    "country": "Korea",
+    "biz_unit": "TDKR-SEL",
+    "currency": "KRW",
+    "vat_pct": 0.1,
+    "social_security_pct": 0.1011
+  },
+  {
+    "country": "Taiwan",
+    "biz_unit": "TDTW-TPE",
+    "currency": "TWD",
+    "vat_pct": 0.05,
+    "social_security_pct": 0.1215
+  },
+  {
+    "country": "Hongkong",
+    "biz_unit": "TDHK-HKG",
+    "currency": "HKD",
+    "vat_pct": 0,
+    "social_security_pct": 0.05
+  },
+  {
+    "country": "Australia",
+    "biz_unit": "TDAU-SYD",
+    "currency": "AUD",
+    "vat_pct": 0.1,
+    "social_security_pct": 0.12
+  },
+  {
+    "country": "Indonesia",
+    "biz_unit": "TDID-CGK",
+    "currency": "IDR",
+    "vat_pct": 0.12,
+    "social_security_pct": 0.1174
+  },
+  {
+    "country": "Vietnam",
+    "biz_unit": "TDVN-SGN",
+    "currency": "VND",
+    "vat_pct": 0.08,
+    "social_security_pct": 0.215
+  },
+  {
+    "country": "Brazil",
+    "biz_unit": "TDBR-GRU",
+    "currency": "BRL",
+    "vat_pct": 0.18,
+    "social_security_pct": 0.28800000000000003
+  },
+  {
+    "country": "Portugal",
+    "biz_unit": "TDPT-LIS",
+    "currency": "EUR",
+    "vat_pct": 0.23,
+    "social_security_pct": 0.2375
+  },
+  {
+    "country": "Philippines",
+    "biz_unit": "OAPH-DVO",
+    "currency": "PHP",
+    "vat_pct": 0.12,
+    "social_security_pct": 0.15000000000000002
+  },
+  {
+    "country": "Philippines",
+    "biz_unit": "OAPH-MNL",
+    "currency": "PHP",
+    "vat_pct": 0.12,
+    "social_security_pct": 0.15000000000000002
+  },
+  {
+    "country": "Taiwan",
+    "biz_unit": "OATW-TPE",
+    "currency": "TWD",
+    "vat_pct": 0.05,
+    "social_security_pct": 0.1215
+  },
+  {
+    "country": "Egypt",
+    "biz_unit": "TDEG-CAI",
+    "currency": "EGP",
+    "vat_pct": 0.14,
+    "social_security_pct": 0.1875
+  }
+]
