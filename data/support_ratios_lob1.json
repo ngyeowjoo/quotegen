@@ -1,0 +1,167 @@
+[
+  {
+    "role": "SENIOR OPS MANAGER",
+    "ratio_1_to_n_agents": 100,
+    "include_by_default": false
+  },
+  {
+    "role": "OPS MANAGER",
+    "ratio_1_to_n_agents": 34,
+    "include_by_default": true
+  },
+  {
+    "role": "ACCOUNT DIRECTOR",
+    "ratio_1_to_n_agents": 100,
+    "include_by_default": false
+  },
+  {
+    "role": "ACCOUNT MANAGER",
+    "ratio_1_to_n_agents": 34,
+    "include_by_default": false
+  },
+  {
+    "role": "SITE DIRECTOR",
+    "ratio_1_to_n_agents": 100,
+    "include_by_default": false
+  },
+  {
+    "role": "SUPERVISOR",
+    "ratio_1_to_n_agents": 100,
+    "include_by_default": false
+  },
+  {
+    "role": "TEAM LEAD - TIER 4",
+    "ratio_1_to_n_agents": 10,
+    "include_by_default": false
+  },
+  {
+    "role": "TEAM LEAD - TIER 3",
+    "ratio_1_to_n_agents": 10,
+    "include_by_default": false
+  },
+  {
+    "role": "TEAM LEAD - TIER 2",
+    "ratio_1_to_n_agents": 10,
+    "include_by_default": false
+  },
+  {
+    "role": "TEAM LEAD - TIER 1",
+    "ratio_1_to_n_agents": 17,
+    "include_by_default": true
+  },
+  {
+    "role": "SME",
+    "ratio_1_to_n_agents": 15,
+    "include_by_default": false
+  },
+  {
+    "role": "COORDINATOR",
+    "ratio_1_to_n_agents": 50,
+    "include_by_default": false
+  },
+  {
+    "role": "PROJECT MANAGER",
+    "ratio_1_to_n_agents": 170,
+    "include_by_default": false
+  },
+  {
+    "role": "POLICY MANAGER",
+    "ratio_1_to_n_agents": 100,
+    "include_by_default": false
+  },
+  {
+    "role": "TRAINER LEAD",
+    "ratio_1_to_n_agents": 150,
+    "include_by_default": false
+  },
+  {
+    "role": "TRAINER - TIER 4",
+    "ratio_1_to_n_agents": 30,
+    "include_by_default": false
+  },
+  {
+    "role": "TRAINER - TIER 3",
+    "ratio_1_to_n_agents": 30,
+    "include_by_default": false
+  },
+  {
+    "role": "TRAINER - TIER 2",
+    "ratio_1_to_n_agents": 30,
+    "include_by_default": false
+  },
+  {
+    "role": "TRAINER - TIER 1",
+    "ratio_1_to_n_agents": 34,
+    "include_by_default": true
+  },
+  {
+    "role": "QA LEAD",
+    "ratio_1_to_n_agents": 200,
+    "include_by_default": false
+  },
+  {
+    "role": "QA - TIER 4",
+    "ratio_1_to_n_agents": 20,
+    "include_by_default": false
+  },
+  {
+    "role": "QA - TIER 3",
+    "ratio_1_to_n_agents": 20,
+    "include_by_default": false
+  },
+  {
+    "role": "QA - TIER 2",
+    "ratio_1_to_n_agents": 20,
+    "include_by_default": false
+  },
+  {
+    "role": "QA - TIER 1",
+    "ratio_1_to_n_agents": 34,
+    "include_by_default": true
+  },
+  {
+    "role": "WFM LEAD",
+    "ratio_1_to_n_agents": 200,
+    "include_by_default": false
+  },
+  {
+    "role": "WFM",
+    "ratio_1_to_n_agents": 50,
+    "include_by_default": false
+  },
+  {
+    "role": "BA LEAD",
+    "ratio_1_to_n_agents": 200,
+    "include_by_default": false
+  },
+  {
+    "role": "BA",
+    "ratio_1_to_n_agents": 34,
+    "include_by_default": true
+  },
+  {
+    "role": "RTA",
+    "ratio_1_to_n_agents": 50,
+    "include_by_default": false
+  },
+  {
+    "role": "SCHEDULER",
+    "ratio_1_to_n_agents": 50,
+    "include_by_default": false
+  },
+  {
+    "role": "COMPLIANCE OFFICER",
+    "ratio_1_to_n_agents": 100,
+    "include_by_default": false
+  },
+  {
+    "role": "RECRUITER",
+    "ratio_1_to_n_agents": 50,
+    "include_by_default": false
+  },
+  {
+    "role": "Psychologist",
+    "ratio_1_to_n_agents": 100,
+    "include_by_default": false
+  }
+]
