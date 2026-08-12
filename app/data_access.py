@@ -1,60 +1,55 @@
 """
-Data access layer -- reads master data from Supabase (RLS-protected).
-Falls back to local data/*.json only if used outside Streamlit (e.g. quick
-scripts) via the `_local_fallback` helpers -- the live app always uses Supabase.
+Data access layer -- reads master data from data/master_data.xlsx (checked into
+git). Finance/HR update master data by editing that file directly and pushing
+to the repo -- no database required. Good for a prototype/demo; swap this
+module for Supabase (or another DB) later without touching the rest of the app.
 """
+from pathlib import Path
 from functools import lru_cache
-from app.supabase_client import get_client
+import pandas as pd
+import streamlit as st
+
+DATA_FILE = Path(__file__).parent.parent / "data" / "master_data.xlsx"
 
 
-def _table(name):
-    return get_client().table(name)
+@st.cache_data
+def _load_sheet(sheet_name):
+    df = pd.read_excel(DATA_FILE, sheet_name=sheet_name)
+    return df.to_dict(orient="records")
 
 
-@lru_cache
 def get_drivers():
-    return _table("countries_drivers").select("*").execute().data
+    return _load_sheet("Drivers")
 
 
-@lru_cache
 def get_base_salary_db():
-    # Paginate: Supabase default caps at 1000 rows per request
-    rows, offset, page = [], 0, 1000
-    while True:
-        chunk = _table("base_salary_db").select("*").range(offset, offset + page - 1).execute().data
-        rows.extend(chunk)
-        if len(chunk) < page:
-            break
-        offset += page
-    return rows
+    return _load_sheet("BaseSalary")
 
 
-@lru_cache
 def get_overheads():
-    return _table("overheads").select("*").execute().data
+    return _load_sheet("Overheads")
 
 
-@lru_cache
 def get_fx_rates():
-    return _table("fx_rates").select("*").execute().data
+    return _load_sheet("FXRates")
 
 
-@lru_cache
 def get_tax_rates():
-    return _table("tax_rates").select("*").execute().data
+    return _load_sheet("TaxRates")
 
 
-@lru_cache
 def get_campaign_types():
-    rows = _table("campaign_types").select("*").execute().data
-    # normalize to the same shape the UI expects: {"type": ..., "key": ..., "description": ...}
-    return [{"type": r["display_name"], "key": r["key"], "description": r.get("description")} for r in rows]
+    rows = _load_sheet("CampaignTypes")
+    return [{"type": r["type"], "key": r["key"], "description": r.get("description")} for r in rows]
 
 
-@lru_cache
-def get_span_ratios(lob="LOB1"):
-    rows = _table("span_ratios").select("*").eq("lob", lob).execute().data
+def get_span_ratios():
+    rows = _load_sheet("SpanRatios")
     return rows[0] if rows else {}
+
+
+def get_support_ratios():
+    return _load_sheet("SupportRatios")
 
 
 def list_cities():
@@ -93,6 +88,14 @@ def get_base_salary(campaign_type, role, city):
     return None
 
 
+def get_support_base_salary(role, city):
+    """Support-role salaries live under campaign_type 'SUPPORT' in BaseSalary."""
+    for r in get_base_salary_db():
+        if r["campaign_type"] == "SUPPORT" and r["role"] == role and r["city"] == city:
+            return r["base_salary"]
+    return None
+
+
 def get_overhead_rates(mode):
     for o in get_overheads():
         if o["overhead_mode"] == mode:
@@ -108,11 +111,5 @@ def get_fx_rate_per_usd(currency):
 
 
 def clear_cache():
-    """Call after an admin edits master data so the app picks up fresh values."""
-    get_drivers.cache_clear()
-    get_base_salary_db.cache_clear()
-    get_overheads.cache_clear()
-    get_fx_rates.cache_clear()
-    get_tax_rates.cache_clear()
-    get_campaign_types.cache_clear()
-    get_span_ratios.cache_clear()
+    """Call after editing data/master_data.xlsx (e.g. via the Master Data Editor page)."""
+    _load_sheet.clear()
