@@ -1,42 +1,30 @@
-import sys
-from pathlib import Path
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
 import streamlit as st
-from app.auth import require_login, current_user, current_role, logout
 
 st.set_page_config(page_title="BPO Quote Generator", page_icon="💼", layout="wide")
 
-require_login()
-
-user = current_user()
-role = current_role()
-
-with st.sidebar:
-    st.caption(f"Signed in as **{user.email}**")
-    st.caption(f"Role: **{role or 'unassigned'}**")
-    if st.button("Sign out"):
-        logout()
-
 st.title("💼 BPO Quote Generator")
-st.caption("Web replacement for the Excel Quote Generator — connected to Supabase")
+st.caption("Prototype — pricing data lives in data/master_data.xlsx, checked into this repo")
 
 st.markdown("""
-### What's working now
-- **Login / roles** — Supabase Auth, with Admin / Finance / HR / Sales roles and
-  country-scoped edit permissions enforced by database-level Row Level Security.
-- **Quote Builder** (sidebar) — build a quote for one or more roles using live
-  master data (31 cities, 8 campaign types) and a pricing engine validated to
-  the cent against the original Excel.
+### What's working
+- **Quote Builder** (sidebar) — build a quote with agent + auto-added support staff
+  roles, live-priced with an engine validated to the cent against the original Excel.
+- Every dollar figure pulled from the database is a **reference default** — base
+  salary, margin %, and penalty % are all editable per line item.
+- A full **calculation breakdown** is shown for every line item.
+- **Download the finished quote** as an Excel file.
 
-### Still to build
-- Quote persistence (save/reopen quotes) — coming next.
-- HR / Finance master-data admin screens.
-- PDF/Excel export of a finished quote.
+### How master data works in this prototype
+All country, salary, overhead, FX, tax, and support-ratio data lives in one file:
+`data/master_data.xlsx`. To update it (new salary bands, new country, new FX
+rate): edit that file and push to the repo — Streamlit Cloud picks up the
+change automatically on the next deploy/refresh.
 
-### New accounts
-New sign-ups default to the **Sales** role (can build quotes, can't edit master
-data). An Admin needs to promote Finance/HR accounts and grant country access
-— see `supabase/schema.sql` for the `user_profiles` / `user_country_access`
-tables, editable from the Supabase Table Editor for now.
+### Not in this prototype (yet)
+- Login / role-based permissions — anyone with the app link can build quotes
+  and could, in principle, edit `master_data.xlsx` if they have repo access.
+  Fine for a demo; add real auth (e.g. Supabase) before this goes to production
+  with real client pricing.
+- Persistent quote history — quotes aren't saved centrally; use the **Download
+  as Excel** button on a finished quote to keep a copy.
 """)
